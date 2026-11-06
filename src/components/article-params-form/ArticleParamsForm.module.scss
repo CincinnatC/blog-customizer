@@ -3,7 +3,8 @@
 	left: 0;
 	width: 616px;
 	height: 100%;
-	overflow: scroll;
+
+	// overflow: scroll; с ним только хуже
 	transform: translate(-616px);
 	transition: transform 0.5s ease;
 }
@@ -16,6 +17,7 @@
 	display: flex;
 	flex-shrink: 0;
 	flex-direction: column;
+	gap: 50px;
 	box-sizing: border-box;
 	width: 616px;
 	height: auto;
@@ -29,4 +31,18 @@
 	display: flex;
 	justify-content: space-between;
 	margin-top: auto;
+}
+
+.title {
+	margin: 0;
+  font-weight: 800;
+  font-size: 32px;
+	font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #D7D7D7;
 }

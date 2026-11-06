@@ -22,7 +22,10 @@ export const ArrowButton = ({
       aria-label="Открыть/Закрыть форму параметров статьи"
       tabIndex={0}
       className={clsx(styles.container, { [styles.container_open]: isOpen })}
-      onClick={onClick}
+      onClick={(event) => {
+        event.stopPropagation();
+        onClick();
+      }}
     >
       <img
         src={arrow}
